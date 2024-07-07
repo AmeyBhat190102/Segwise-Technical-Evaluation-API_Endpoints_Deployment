@@ -10,13 +10,3 @@ db = SQLAlchemy(app)
 CORS(app)
 auth = HTTPBasicAuth()
 
-# Create a simple user authentication dictionary
-users = {
-    "admin": "password123"
-}
-
-
-@auth.verify_password
-def verify_password(username, password):
-    if username in users and users[username] == password:
-        return username
