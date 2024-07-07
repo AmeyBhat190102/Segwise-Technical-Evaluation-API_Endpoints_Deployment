@@ -64,3 +64,9 @@ To interact with the Game Data Analytics API, you can utilize the following endp
 - `genres`: Filter by genres (partial match)
 - `tags`: Filter by tags (partial match)
 - `aggregate`: Perform aggregate functions (`max_price`, `min_price`, `avg_price`)
+
+### Local Setup of This Project
+
+- `docker build -t flask-app .`
+- `docker run -p 5000:5000 flask-app`
+
