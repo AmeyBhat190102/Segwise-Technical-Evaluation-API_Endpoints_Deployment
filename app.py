@@ -9,4 +9,3 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 CORS(app)
 auth = HTTPBasicAuth()
-
